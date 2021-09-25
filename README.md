@@ -1,5 +1,9 @@
 # Codeceptjs within Test
 
+A Codeceptjs example repo to demo a reproducible defect/inconsistency with the Playwright helper and the `within` feature;
+
+https://codecept.io/basics/#within
+
 ## Start and Run Tests
 
 1. npm start;
@@ -7,7 +11,7 @@
 2. npm run test:puppeteer;
     - PASSES
 
-3. npm run test:playwright; (fails)
+3. npm run test:playwright;
     - FAILS
 
 ## Playwright `within` test
