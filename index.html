@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Codeceptjs "within" test</title>
+  </head>
+  <body>
+    <p id="status">No button pressed</p>
+    <div class="class-1"><button>Hello</button></div>
+    <div class="class-2"><button>Hello</button></div>
+    <div class="class-3"><button>Hello</button></div>
+    <div class="class-4"><button>Hello</button></div>
+    <div class="class-5"><button>Hello</button></div>
+    <script>
+      document.querySelectorAll('button').forEach((el) => {
+        el.onclick = () => {
+          document.getElementById('status').innerText = `${el.parentNode.className} clicked`;
+        }
+      })
+    </script>
+  </body>
+</html>

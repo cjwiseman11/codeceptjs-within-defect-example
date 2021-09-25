@@ -1,0 +1,18 @@
+{
+  "name": "codeceptjs-test-repo",
+  "version": "1.0.0",
+  "description": "A test repo to test how within works in Codeceptjs",
+  "main": "index.html",
+  "dependencies": {
+    "codeceptjs": "^3.1.2",
+    "express": "^4.17.1",
+    "playwright": "^1.15.0",
+    "puppeteer": "^10.4.0"
+  },
+  "scripts": {
+    "start": "node ./server.js",
+    "test:playwright": "npx codeceptjs run --steps --config ./codecept-playwright.conf.js",
+    "test:puppeteer": "npx codeceptjs run --steps --config ./codecept-puppeteer.conf.js"
+  },
+  "author": "Chris Wiseman"
+}
