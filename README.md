@@ -2,9 +2,13 @@
 
 ## Start and Run Tests
 
-> npm start;
-> npm run test:puppeteer; (passes)
-> npm run test:playwright; (fails)
+1. npm start;
+
+2. npm run test:puppeteer;
+    - PASSES
+
+3. npm run test:playwright; (fails)
+    - FAILS
 
 ## Playwright `within` test
 ### Expected Result
